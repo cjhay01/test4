@@ -1,0 +1,6 @@
+body.dm {
+    background-color: #222;
+}
+p.dm, h1.dm, h2.dm, h3.dm, h4.dm, h5.dm, h6.dm, pre.dm {
+    color: #DDD;
+}

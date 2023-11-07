@@ -1,0 +1,8 @@
+extends layout
+block content
+  head 
+    link(rel='stylesheet', href='css/styles.css')
+  body.dm
+    h1.dm= 'error :('
+    h2.dm= `${error.status == '404' ? error.status + ', nothing found here' : error.status ? error.status : '' + ' ' + message}`
+    pre.dm #{error.stack}

@@ -1,0 +1,13 @@
+#topnav.topnav
+  a.active(href='/') Home
+  a(href='/about') About
+  a(href='#members') Members
+  a(href='#topic') Topic
+  a.icon(href='javascript:void(0);' onclick='func()')
+    i#menu-icon.menu-icon.fa.fa-bars
+  a.darkmode(href='javascript:void(0);' onclick='toggleDark()' title='Toggle theme')
+    i#dm-icon.dm-icon.fa-regular.fa-moon.fa-sun
+    p#dm-toggle-text.dm-toggle-text Toggle dark mode
+  .topnav-search
+    i.fa.fa-magnifying-glass.search-icon
+    input.topnav-searchbar(type='text' placeholder='Search')
