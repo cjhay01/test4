@@ -4,10 +4,12 @@ block content
   head
     title hi
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js')
-  body 
+  body
+  .main-content
     a(href='proj') go to main proj
-  .slidecontainer
-    p#slider-text 1
-    input#range.slider(type='range' min='1' max='1000000000000' oninput='f()' value='1')
-    script(type='text/javascript' src='/js/slider.js')
-
+    .slidecontainer
+      p#slider-text 1
+      input#range.slider(type='range' min='1' max='1000000000000' oninput='f()' value='1')
+      script(type='text/javascript' src='/js/slider.js')
+  footer(class='footer') footer
+    

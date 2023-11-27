@@ -1,8 +1,26 @@
 body {
-  padding: 50px;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
 a {
+  color: #0077FF;
+}
+a:hover {
   color: #00B7FF;
+}
+.main-content {
+  min-height: calc(100vh - 70px);
+  padding: 40px 40px 0 40px;
+}
+@media screen and (max-width: 750px) {
+  .main-content {
+    min-height: 100vh;
+    padding: 40px 40px 40px 40px;
+  }
+}
+.footer {
+  height: 100px;
+  padding: 40px;
+  bottom: 0%;
+  background-color: rgb(130, 213, 238);
 }

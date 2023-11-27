@@ -1,0 +1,68 @@
+#grad {
+    background: linear-gradient(to right, rgb(255, 144, 240), rgb(252, 252, 80));
+}
+.main-content {
+    font-size: large;
+}
+p, h1 {
+    width: fit-content;
+}
+@media screen and (max-width: 600px) {
+    .image, .img-src {
+        float: none;
+        max-width: 300px;
+        max-height: 300px;
+        width: 100%;
+        height: auto;
+    }
+}
+.image, .img-src {
+    float: right;
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 750px) {
+    .image, .img-src {
+        float: none;
+        max-width: 300px;
+        max-height: 300px;
+        width: 100%;
+        height: auto;
+    }
+}
+#clickable {
+    cursor: pointer;
+    border-bottom: 1px dotted black;
+}
+ul.projs > li {
+    margin: 10px 20px 10px 0px;
+}
+.socials {
+    list-style: none;
+    margin: 10px 0px 0px 0px;
+    padding: 0;
+}
+.social-icons {
+    padding: 10px;
+    font-size: 50px;
+    color: black;
+    float: left;
+}
+.cbc {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+@media screen and (max-width: 400px) {
+    .cbc {
+        width: 75px;
+        height: 75px;
+        padding: 0;
+        margin: 0;
+        float: right;
+    }
+}
