@@ -13,4 +13,10 @@ router.get('/about', function(req, res, next) {
 router.get('/main-test', function (req, res, next) {
   res.render('pages/main');
 });
+
+router.get('/main', function (req, res, next) {
+  if (req.query.password == "amongus"){
+    res.render('pages/main2');
+  }else res.render('pages/main')
+});
 module.exports = router;

@@ -1,10 +1,11 @@
 #grad {
     background: linear-gradient(to right, rgb(255, 144, 240), rgb(252, 252, 80));
+    width: auto;
 }
 .main-content {
     font-size: large;
 }
-p, h1 {
+p, h1, .fit {
     width: fit-content;
 }
 @media screen and (max-width: 600px) {
@@ -55,14 +56,7 @@ ul.projs > li {
     height: 100px;
     padding: 0;
     margin: 0;
-    float: right;
 }
-@media screen and (max-width: 400px) {
-    .cbc {
-        width: 75px;
-        height: 75px;
-        padding: 0;
-        margin: 0;
-        float: right;
-    }
+.push {
+    height: 1300px;
 }
