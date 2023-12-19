@@ -1,0 +1,59 @@
+doctype html 
+html
+    head
+        meta(content='width=device-width, initial-scale=1' name='viewport')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css')
+        link(rel='stylesheet' href='/css/nav.css')
+        link(rel='stylesheet' href='/css/dm.css')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js')
+        title About
+    body 
+        #topnav.topnav
+            a(href='/proj') Home
+            a.active(href='/proj/about') About
+            a(href='#members') Members
+            a(href='#topic') Topic
+            a(href='/proj/login') Log in
+            a.icon(href='javascript:void(0);' onclick='func()')
+                i#menu-icon.menu-icon.fa.fa-bars
+            a.darkmode(href='javascript:void(0);' onclick='toggleDark()' title='Toggle theme')
+                i#dm-icon.dm-icon.fa-regular.fa-moon.fa-sun
+                p#dm-toggle-text.dm-toggle-text Toggle dark mode
+        h1#about About
+        p Review papers are critical and comprehensive review that provide new insights or interpretation of a subject through deep analysis. A review paper is more of a literature overview, it must contain an in-depth critical review of a literature.
+            sup 
+                a(href='https://iwaponline.com/pages/how_to_review_a_paper') [1]
+        h1#whatis What is a review paper?
+        p According to UW-La Crosse, A review paper presents a balanced and unbiased review o a particular topic so that a person who is not an expert can understand it. The review paper summarizes the current understandings of experts of the topic and discuss the recent finding of recent research papers.
+        p However, a Review Paper is NOT a report on some reference that your found, it IS an analysis of several papers to produce a clear and logical argument about a specific topic. The key aspects of a review paper is to provide evidence for a specific point of view.
+            sup 
+                a(href='https://www.crossroadsacademy.org/crossroads/wp-content/uploads/2016/05/How-to-Prepare-a-Science-Review-Paper.pdf') [2]
+        h1#howto How do you create a Review Paper?
+        ol
+            li
+                p Choose a clear and captivating title.
+            li
+                p Put your name below the title.
+            li
+                p Begin with a clear statement of the subject and its importance in the world.
+            li
+                p Create an introduction. Your introduction should be short and concise (about 1 page). Do not call the intro section the "introduction", just begin writing.
+            li
+                p Pictures and graphs can be very informative. Use them whenever they make a visual point in the introduction, but keep them simple and on subject. Do not ramble. Scientists love data, you can have as many pages of images you want. Don't write more than a few single-spaced pages in the first draft.
+            li
+                p Narrow your perspective by the end of the first page.
+            li
+                p Provide the reader with a clear statement about what you'll cover in your review. Aim to present a balanced view by exploring both sides of the issue. For instance, if your focus is on transgenic crops, offer evidence highlighting their potential benefits and drawbacks concerning the environment. This approach helps provide a comprehensive understanding of the topic by considering diverse perspectives.
+            li
+                p The body of the paper should have many visuals and amuse and inform the readers, or stimulate the readers' imaginations.
+            li
+                p Wrap up your argument. Some authors try and make this ending really thoughtful.
+            li
+                p Give the references either at the end or as you go.
+            br
+            br
+        p A Review Paper is an overview of previously released studies on the subject. It need to provide a synopsis of recent developments in the field. It also won't include any brand-new experimental findings, in contrast to an original study article. The purpose of writing a literature review is to offer a critical assessment of the information gleaned from previous research projects.
+            sup
+                a(href='https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/how-to-write-review-article/') [3]
+    script(src='/js/nav.js')
+    script(src='/js/script.js')

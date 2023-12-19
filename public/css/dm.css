@@ -1,6 +1,43 @@
 body.dm {
     background-color: #222;
 }
-p.dm, h1.dm, h2.dm, h3.dm, h4.dm, h5.dm, h6.dm, pre.dm {
+p.dm, h1.dm, h2.dm, h3.dm, h4.dm, h5.dm, h6.dm, pre.dm, li.dm {
     color: #DDD;
+}
+
+li > a.dm {
+    color: #00B7FF;
+}
+p:not(.a):not(.dm-toggle-text) {
+   font-size: 1.5em;
+   text-align: justify;
+   text-indent: 2em;
+}
+.a {
+    font-style: italic;
+    margin: 0;
+}
+.text {
+    padding: 0 40px 0 40px;
+}
+.img-container, img {
+    float: right;
+    margin: 0 0 20px 20px;
+    max-width: 200px;
+    max-height: 400px;
+}
+.toc {
+    float: left;
+    width: fit-content;
+    margin: 0 20px 20px 0;
+    border: 1px solid white;
+    padding: 20px;
+    font-size: larger;
+}
+.toc:not(.dm) {
+    border: 1px solid black;
+}
+.no-auth {
+    filter: blur(15px);
+    pointer-events: none;
 }

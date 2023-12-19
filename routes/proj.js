@@ -2,11 +2,11 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
-  res.render('pages/proj/proj');
+  res.render('pages/proj/proj', { auth: req.session.user });
 });
 
 router.get('/about', function(req, res, next) {
-  res.send(`About`);
+  res.render('pages/proj/about')
 });
 
 router.get('/login', function(req, res) {
