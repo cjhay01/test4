@@ -11,7 +11,10 @@ html(style="scroll-behavior: smooth;")
       a(href='/proj/about') About
       a(href='#members') Members
       a(href='#topic') Topic
-      a(href='/proj/login') Log in
+      if (auth)
+        a(href='/proj/logout') Log out
+      else
+        a(href='/proj/login') Log in
       a.icon(href='javascript:void(0);' onclick='func()')
         i#menu-icon.menu-icon.fa.fa-bars
       a.darkmode(href='javascript:void(0);' onclick='toggleDark()' title='Toggle theme')

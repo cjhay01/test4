@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/about', function(req, res, next) {
-  res.render('pages/proj/about')
+  res.render('pages/proj/about', { auth: req.session.user })
 });
 
 router.get('/login', function(req, res) {
